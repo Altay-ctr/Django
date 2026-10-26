@@ -1,0 +1,7 @@
+<h1>Все блоги</h1>
+<ul>
+    {% for blog in blogs %}
+        <!-- Ссылка на детальную страницу с ID блога -->
+        <li><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></li>
+    {% endfor %}
+</ul>
